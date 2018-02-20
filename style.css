@@ -1,0 +1,442 @@
+/*
+	Theme Name: HTML5 Blank
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+
+  	COLORS FOR NEOPOLITAN ICE CREAM THEME
+			BROWN #6b4e38
+			BEIGE #fff1e4
+			PINK #ee9cb0 rgba(238,156,176,.9)
+			light-brown #C69C6D
+
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	/* border: thin solid red; */
+}
+/* Older browsers */
+  html { font-size: 14px;
+				 background-color: #fff1e4;
+  }
+  /* Modern browsers only need this one */
+
+	@media screen and (min-width: 25em){
+    html {
+			font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+			}
+  }
+
+body {
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#6b4e38;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#6b4e38;
+	text-decoration:none;
+}
+a:hover {
+	color:#6b4e38;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #ee9cb0;
+}
+.center {
+	text-align: center;
+}
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:1080px;
+	width:95%;
+	margin:30px auto 0 auto;
+	position:relative;
+	display: flex;
+	flex-direction: column;
+}
+/* header   HERE  */
+.header {
+	z-index: 10;
+}
+.header span.logo {
+	color: #ee9cb0;
+	font-weight:700;
+	letter-spacing: -.15em;
+
+}
+.header small.dwight-dot {
+	color: #6b4e38;
+	font-size: 80%;
+	margin: .06em;
+}
+
+main {
+	flex: 1;
+	padding: 10%;
+}
+
+/* footer */
+.footer {
+	text-align: center;
+
+	font-size: 14px;
+	position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+	padding: 0;
+	background-color:#ee9cb0;
+  text-align: center;
+}
+.footer, .footer a {
+	color: #fff1e4;
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+#home_neopolitan_svg {
+	margin-top: 20px;
+	animation: shake 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {  transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-2px, -2px) rotate(-1deg); }
+  20% { transform: translate(-4px, 0px) rotate(2deg); }
+  30% { transform: translate(4px, 2px) rotate(0deg); }
+  40% { transform: translate(2px, -1px) rotate(3deg); }
+  50% { transform: translate(-2px, 2px) rotate(-3deg); }
+  60% { transform: translate(-4px, 1px) rotate(0deg); }
+  70% { transform: translate(4px, 1px) rotate(-3deg); }
+  80% { transform: translate(-4px, -1px) rotate(3deg); }
+  90% { transform: translate(2px, 2px) rotate(0deg); }
+  100% { transform: translate(2px, -2px) rotate(-1deg); }
+}
+
+#index_title a {
+	color: #ee9cb0;
+}
+figure.index-thumbnail,#single_featureimage {
+	margin-top:30px;
+	border-top: thin solid #6b4e38;
+	border-bottom: thin solid #6b4e38;
+
+}
+main.index_homepage {
+	margin:0px 0 30px 0;
+}
+.view-article {
+	font-weight: bold;
+	color: #ee9cb0;
+}
+.single_title {
+	margin-top: 6vw;
+	color: #ee9cb0;
+}
+
+/* Previous and Next Posts in Single View */
+#single_previousnext {
+	font-size: 1em;
+}
+.single_previous, .single_next {
+	padding: 20px;
+}
+.single_next a,.single_next, .single_previous a,.single_previous {
+	color: #ee9cb0;
+}
+.single_next :hover, .single_previous :hover {
+	color: #6b4e38;
+	transition: all 1s;
+}
+.single_previous {
+	float:left;
+}
+.single_next {
+	float:right;
+	text-align: right;
+}
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    RESPONSIVE
+
+		- Letter spacing on D-W-I-G-H-T header css3 -- above
+\*------------------------------------*/
+
+
+@media only screen and (min-width:280px) {
+	/* main {background-color: red;} */
+	.logo {font-size: 30px;}
+	h1 {
+	  font-size: 1.2em;
+	}
+	h2 {
+	  font-size: 1.1em;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	p,code,kbd,pre,samp{
+		font-size: .8em;
+	}
+}
+@media only screen and (min-width:480px) {
+	/* main {background-color: blue;} */
+	/* .logo {font-size: 24px;} */
+}
+@media only screen and (min-width:768px) {
+	/* main {background-color: pink;} */
+	.logo {font-size: 34px;}
+	h1 {
+	  font-size: 3.9vw;
+	}
+	h2 {
+	  font-size: 2.0vw;
+	}
+	h3 {
+	  font-size: 1.8vw;
+	}
+	p,code,kbd,pre,samp{
+	  font-size: 1.5vw;
+	}
+}
+@media only screen and (min-width:1024px) {
+	/* main {background-color: green;} */
+	.logo {font-size: 48px;}
+}
+@media only screen and (min-width:1140px) {
+	/* main {background-color: purple;} */
+	.logo {font-size: 58px;}
+}
+@media only screen and (min-width:1280px) {
+	/* main {background-color: yellow;} */
+	.logo {font-size: 63px;}
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
+
+.wdi_feed_info {display:none;}
+
+
+#wdi_feed_0 .wdi_photo_wrap_inner {
+	border:0;
+}
+
+#wdi_feed_0 .wdi_load_more_wrap {
+			width:150px !important;
+			height:100px !important;
+			border-radius: 0px !important;
+	    border: 0px solid #ee9cb0 !important;
+	background-image: url(http://d-w-i-g-h-t.com/wp-content/uploads/2018/02/neopolitan-1.png)
+}
+#wdi_feed_0 .wdi_load_more_text {
+	color:#6b4e38 !important;
+}
