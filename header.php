@@ -14,23 +14,13 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
-		<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
+
 				<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-				<script>
-				  $( function() {
-				    $( "#accordion" ).accordion({
-				      heightStyle: "content"
-				    });
-				  } );
-				  </script>
+				<script src="<?php echo get_template_directory_uri(); ?>/js/Flickr.Gallery.min.js"></script>
+				<script src="<?php echo get_template_directory_uri(); ?>/js/FlickrAPI.js"></script>
+				<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
+
 	</head>
 	<body <?php body_class(); ?>
 
