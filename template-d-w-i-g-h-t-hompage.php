@@ -7,7 +7,7 @@
 				<div class="box">
 					<br class="clear">
 
-					<div id="homepage_nav">
+					<div id="homepage_nav" class="hide">
 						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 					</div>
 
@@ -17,6 +17,6 @@
 		<br class="clear">
 		<br class="clear">
 	</main>
-	<img id="home_neopolitan_svg" alt="icecream cone" src="<?php echo get_template_directory_uri() . '/img/neopolitan.svg'; ?>" />
+	<img id="home_neopolitan_svg" alt="icecream cone" class="home_neopolitan_svg" src="<?php echo get_template_directory_uri() . '/img/neopolitan.svg'; ?>" />
 
 <?php get_footer(); ?>
