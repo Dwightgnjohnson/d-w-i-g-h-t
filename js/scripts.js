@@ -4,21 +4,22 @@ $( function() {
 	 });
 
 	 $("#homepage_nav").css("background-color","yellow");
-	 $("#homepage_nav > ul").show();
 
 	 $( "#home_neopolitan_svg" ).click(function() {
-  		$( "#homepage_nav > ul" ).fadeToggle(1000);
+		 	$(this).animate({height: '30vh', left: '5vw', top: '2vh'}, "slow");
+			$("#homepage_nav").addClass( "show" );
 	 });
 
-	 $("button").click(function(){
-    $("#div1").fadeToggle();
-    $("#div2").fadeToggle("slow");
-    $("#div3").fadeToggle(3000);
-});
+	 $( "#homepage_nav_about" ).click().css.()
 
 
 
 
 
 
+
+
+
+
+//don't you dare delete the end:
 } );

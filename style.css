@@ -89,6 +89,7 @@ input:focus {
 }
 ul {
   list-style-type: none;
+	padding:0;
 }
 
 button {
@@ -176,10 +177,12 @@ main {
     PAGES
 \*------------------------------------*/
 #home_neopolitan_svg {
-	height:250px;
-	margin-top: 20px;
+	height: 60vh;
 	animation: shake 20s;
   animation-iteration-count: infinite;
+	position: fixed;
+  top: 20vh;
+  left: 46vw;
 }
 
 @keyframes shake {
@@ -194,6 +197,14 @@ main {
   80% { transform: translate(-4px, -1px) rotate(3deg); }
   90% { transform: translate(2px, 2px) rotate(0deg); }
   100% { transform: translate(2px, -2px) rotate(-1deg); }
+}
+#homepage_nav ul li {
+	font-weight: 700;
+	padding: 5px;
+	cursor: pointer;
+}
+#homepage_nav ul li:hover {
+	text-decoration: underline;
 }
 
 #index_title a {
