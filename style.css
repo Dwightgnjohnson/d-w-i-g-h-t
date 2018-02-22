@@ -234,8 +234,9 @@ main {
 	padding: 5px;
 	cursor: pointer;
 }
-#homepage_nav ul li:hover {
-	text-decoration: underline;
+
+#homepage_nav a {
+	color: rgba(238,156,176,1)
 }
 #sidebar_nav {
  background-color: rgba(255,241,228,1);
@@ -244,7 +245,7 @@ main {
  position: absolute;
  top:0;
  width: 100%;
- height: 90vh;
+ height: 80vh;
  clear: both;
  padding:0;margin:0;
 }
@@ -252,6 +253,9 @@ main {
 	text-align: center;
 	padding-top: 12vw;
 	font-weight: 700;
+}
+#sidebar_nav ul.sub-menu {
+	padding: 5px 0;
 }
 
 #sidebar_nav ul li {
@@ -262,9 +266,9 @@ main {
 	cursor: pointer;
 }
 #sidebar_nav a {
-	color: rgba(238,156,176,1);
+	color: rgba(238,156,176,1)
 }
-#sidebar_nav a:hover {
+#sidebar_nav a:hover, #homepage_nav a:hover {
 	text-decoration: underline;
 }
 #index_title a {
@@ -323,8 +327,12 @@ main.index_homepage {
     IMAGES
 \*------------------------------------*/
 
-
-
+photonic-social, photonic-object-header photonic-flickr-set {
+	display: none;
+}
+#swipebox-overlay, #swipebox-bottom-bar {
+    background: #ee9cb0;
+}
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
