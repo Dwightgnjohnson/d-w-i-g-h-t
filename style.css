@@ -15,6 +15,8 @@
 \*------------------------------------*/
 
 /* global box-sizing */
+ @import url('https://fonts.googleapis.com/css?family=Itim|Open+Sans');
+
 *,
 *:after,
 *:before {
@@ -26,9 +28,14 @@
 	/* border: thin solid red; */
 }
 /* Older browsers */
-  html { font-size: 14px;
-				 background-color: #fff1e4;
+  html {
+		font-size: 14px;
+		background-color: #fff1e4;
+		font-family: 'Open Sans', sans-serif;
   }
+	h1,h2,h3,h4,h5,h6 {
+		'Itim', cursive;
+	}
   /* Modern browsers only need this one */
 
 	@media screen and (min-width: 25em){
@@ -38,7 +45,6 @@
   }
 
 body {
-	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#6b4e38;
 }
 /* clear */
@@ -159,7 +165,6 @@ main {
 /* footer */
 .footer {
 	text-align: center;
-
 	font-size: 14px;
 	position: fixed;
   right: 0;
@@ -180,14 +185,17 @@ main {
 	animation: shake 20s;
   animation-iteration-count: infinite;
 }
+.home_neopolitan_svg {
+	cursor: nw-resize;
+}
+
 .home_neopolitan_svg_afterclick {
 	height: 10vh;
 	position: fixed;
-  top: 2vh;
-  left: 2vh;
+  top: 4vh;
+  left: 4vh;
 	z-index: 4;
 }
-.home_neopolitan_svg {	cursor: nw-resize;}
 .home_neopolitan_svg_afterclick:hover{cursor:se-resize;}
 
 @media only screen and (max-width:480px) {
@@ -196,7 +204,7 @@ main {
 		position: absolute;
 		margin: auto;
 		height: 380px;
-		margin-top: 40px;
+		margin-top: 60px;
 	}
 }
 @media only screen and (min-width:480px) {
@@ -205,7 +213,7 @@ main {
 		position: absolute;
 		margin: auto;
 		height: 570px;
-		margin-top: 90px;
+		margin-top: 110px;
 	}
 }
 #sidebar_neopolitan_svg {
@@ -213,8 +221,8 @@ main {
 	animation: shake 20s;
   animation-iteration-count: infinite;
 	position: fixed;
-  top: 2vh;
-  left: 2vh;
+  top: 4vh;
+  left: 4vh;
 	z-index: 4;
 }
 #sidebar_neopolitan_svg:hover{cursor:se-resize;}
@@ -233,16 +241,8 @@ main {
   90% { transform: translate(2px, 2px) rotate(0deg); }
   100% { transform: translate(2px, -2px) rotate(-1deg); }
 }
-#homepage_nav ul li {
-	font-weight: 700;
-	padding: 5px;
-	cursor: pointer;
-}
 
-#homepage_nav a {
-	color: rgba(238,156,176,1)
-}
-#sidebar_nav {
+#homepage_nav,#sidebar_nav {
  background-color: rgba(255,241,228,1);
  display: block;
  z-index: 1;
@@ -250,24 +250,25 @@ main {
  top:0;
  left:0;
  width: 100%;
- height: 100vh;}
-#sidebar_nav ul {
+ height: 100vh;
+}
+#homepage_nav ul, #sidebar_nav ul {
 	text-align: center;
-	padding-top: 12vw;
+	padding-top: 15vh;
 	font-weight: 700;
 }
 #sidebar_nav ul.sub-menu {
 	padding: 5px 0;
 }
 
-#sidebar_nav ul li {
-	padding: 5px 0;
+#homepage_nav ul li ,#sidebar_nav ul li {
+	padding: 10px 0;
 }
 #sidebar_nav ul li:hover {
 	background-color: rgba(255,241,228,.4);
 	cursor: pointer;
 }
-#sidebar_nav a {
+#homepage_nav a, #sidebar_nav a {
 	color: rgba(238,156,176,1)
 }
 #sidebar_nav a:hover, #homepage_nav a:hover {
@@ -324,6 +325,23 @@ main.index_homepage {
 	border: 1px solid #c5c5c5;
 	background: #ee9cb0; /*darker brown for hover*/
 }
+
+
+/*------------------------------------*\
+    SNAKE GAME
+\*------------------------------------*/
+
+	#canvas {
+		background-color: red;
+	  display: block;
+	  z-index: 1;
+	  position: fixed;
+	  top:0;
+	  left:0;
+
+	}
+
+
 
 /*------------------------------------*\
     IMAGES

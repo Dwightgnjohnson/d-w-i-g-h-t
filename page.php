@@ -6,7 +6,7 @@
 			<div class="row center-xs">
 				<div class="col-md-12">
 					<div class="box">
-						<small><?php the_title(); ?></small>
+						<h1 id="pade_title" class="page_title"><?php the_title(); ?></h1>
 					</div>
 				</div>
 			</div>
