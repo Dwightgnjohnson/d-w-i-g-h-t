@@ -10,7 +10,8 @@
 					</div>
 				</div>
 			</div>
-
+			<br class="clear">
+	 		<br class="clear">
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 

@@ -137,7 +137,7 @@ button:hover {
 }
 /* header   HERE  */
 .header {
-	z-index: 2;
+	z-index: 5;
 }
 .header span.logo {
 	color: #ee9cb0;
@@ -327,11 +327,17 @@ main.index_homepage {
     IMAGES
 \*------------------------------------*/
 
-photonic-social, photonic-object-header photonic-flickr-set {
-	display: none;
+.photonic-object-header {
+	display: none !important;
+}
+#photonic-social {
+	display: none !important;
 }
 #swipebox-overlay, #swipebox-bottom-bar {
-    background: #ee9cb0;
+    background: #ee9cb0 !important;
+}
+#swipebox-overlay {
+	z-index:1!important;
 }
 /*------------------------------------*\
 	TYPOGRAPHY
