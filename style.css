@@ -181,12 +181,15 @@ main {
   animation-iteration-count: infinite;
 }
 .home_neopolitan_svg_afterclick {
-	height: 7vh;
+	height: 10vh;
 	position: fixed;
   top: 2vh;
   left: 2vh;
 	z-index: 4;
 }
+.home_neopolitan_svg {	cursor: nw-resize;}
+.home_neopolitan_svg_afterclick:hover{cursor:se-resize;}
+
 @media only screen and (max-width:480px) {
 	.home_neopolitan_svg {
 		top: 0; left: 0; bottom: 0; right: 0;
@@ -206,15 +209,16 @@ main {
 	}
 }
 #sidebar_neopolitan_svg {
-	height: 7vh;
+	height: 10vh;
 	animation: shake 20s;
   animation-iteration-count: infinite;
 	position: fixed;
   top: 2vh;
   left: 2vh;
 	z-index: 4;
-
 }
+#sidebar_neopolitan_svg:hover{cursor:se-resize;}
+
 
 @keyframes shake {
   0% {  transform: translate(1px, 1px) rotate(0deg); }
@@ -242,13 +246,11 @@ main {
  background-color: rgba(255,241,228,1);
  display: block;
  z-index: 1;
- position: absolute;
+ position: fixed;
  top:0;
+ left:0;
  width: 100%;
- height: 80vh;
- clear: both;
- padding:0;margin:0;
-}
+ height: 100vh;}
 #sidebar_nav ul {
 	text-align: center;
 	padding-top: 12vw;
