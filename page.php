@@ -6,12 +6,11 @@
 			<div class="row center-xs">
 				<div class="col-md-12">
 					<div class="box">
-						<h1 id="pade_title" class="page_title"><?php the_title(); ?></h1>
+						<h1 id="page_title" class="page_title"><?php the_title(); ?></h1>
 					</div>
 				</div>
 			</div>
 			<br class="clear">
-	 		<br class="clear">
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -19,8 +18,6 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<?php the_content(); ?>
-
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
 				<br class="clear">
 
