@@ -15,5 +15,13 @@ $( function() {
 			$(this).effect( "bounce", {times:1,distance:5,direction:"left"}, 1000 );
     });
 
+
+//facnybox for instagram feed
+		$("[data-fancybox]").fancybox({
+			loop : true,
+			buttons : [
+        'close'
+    ],
+		});
 //don't you dare delete the end:
 } );
