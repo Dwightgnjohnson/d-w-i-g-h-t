@@ -6,7 +6,7 @@
 
 
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
-		<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/nicegallery.css">
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
@@ -17,12 +17,12 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
-
 				<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 				<script src="<?php echo get_template_directory_uri(); ?>/js/Flickr.Gallery.min.js"></script>
 				<script src="<?php echo get_template_directory_uri(); ?>/js/FlickrAPI.js"></script>
 				<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
+				<script type="text/javascript" src="https://raw.githubusercontent.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
 
 	</head>
 	<body <?php body_class(); ?>

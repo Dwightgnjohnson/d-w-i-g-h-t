@@ -60,9 +60,6 @@
 
 				</div>
 			</div>
-			<div class="col-xs-3">
-				<?php// include 'instagram_feed.php';?>
-			</div>
 		</div>
 		<br class="clear">
 		<br class="clear">

@@ -4,9 +4,10 @@
 
 						<small class="copyright">
 							&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
-							&nbsp;
+							&nbsp;&nbsp;
 							<?php _e('powered by', 'html5blank'); ?>
 							<a href="//wordpress.org" title="WordPress">wordpress</a>
+							&nbsp;&nbsp; dwightgnjohnson@gmail.com
 						</small>
 		</footer>
 
@@ -19,7 +20,14 @@
 			</div>
 		</aside>
 		<!-- /menu -->
-
-
+		<script type="text/javascript">
+		    var feed = new Instafeed({
+		        get: 'tagged',
+		        tagName: 'awesome',
+		        clientId: '4bbacd51732e48d7977b4cda20dbc147',
+		        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+		    });
+		    feed.run();
+		</script>
 	</body>
 </html>
