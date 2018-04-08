@@ -116,7 +116,9 @@ input:focus {
 }
 /* header   HERE  */
 .header {
-	z-index: 5;
+	z-index: 3;
+  min-height:10vh;
+  /* background-color: red; */
 }
 .header span.logo {
 	color: #ee9cb0;
@@ -150,63 +152,20 @@ main {
 }
 
 /*------------------------------------*\
-    PAGES
+    menu
 \*------------------------------------*/
-#home_neopolitan_svg {
-	animation: shake 20s;
-  animation-iteration-count: infinite;
-}
-.home_neopolitan_svg {
-	cursor: nw-resize;
-}
-
-.home_neopolitan_svg_afterclick {
-	height: 100px;
-	position: fixed;
-  top: 4vh;
-  left: 4vh;
-	z-index: 4;
-}
-.home_neopolitan_svg_afterclick:hover{cursor:se-resize;}
-
-@media only screen and (max-width:375px) {
-	.home_neopolitan_svg {
-		top: 0; left: 0; bottom: 0; right: 0;
-		position: absolute;
-		margin: auto;
-		height: 360px;
-		margin-top: 60px;
-	}
-}
-@media only screen and (min-width:375px) {
-	.home_neopolitan_svg {
-		top: 0; left: 0; bottom: 0; right: 0;
-		position: absolute;
-		margin: auto;
-		height: 360px;
-		margin-top: 100px;
-	}
-}
-@media only screen and (min-width:700px) {
-	.home_neopolitan_svg {
-		top: 0; left: 0; bottom: 0; right: 0;
-		position: absolute;
-		margin: auto;
-		height: 500px;
-		margin-top: 100px;
-	}
-}
-#sidebar_neopolitan_svg {
-	height: 100px;
+#mainmenu {
+	width: 50px;
 	animation: shake 20s;
   animation-iteration-count: infinite;
 	position: fixed;
-  top: 4vh;
-  left: 4vh;
+  top: 2vh;
+  left: 2vh;
 	z-index: 4;
 }
-#sidebar_neopolitan_svg:hover{cursor:se-resize;}
-
+#mainmenu:hover {
+  cursor: pointer;
+}
 
 @keyframes shake {
   0% {  transform: translate(1px, 1px) rotate(0deg); }
@@ -219,10 +178,12 @@ main {
   70% { transform: translate(4px, 1px) rotate(-3deg); }
   80% { transform: translate(-4px, -1px) rotate(3deg); }
   90% { transform: translate(2px, 2px) rotate(0deg); }
-  100% { transform: translate(2px, -2px) rotate(-1deg); }
+  100% { transform: translate(1px, 1px) rotate(0deg); }
 }
-
-#homepage_nav,#sidebar_nav {
+/*
+This is for when you click on the menu and covers full page:
+*/
+#sidebar_nav {
  background-color: rgba(255,241,228,1);
  display: block;
  z-index: 1;
@@ -232,20 +193,20 @@ main {
  width: 100%;
  height: 100vh;
 }
-#homepage_nav ul, #sidebar_nav ul {
+#sidebar_nav ul {
 	text-align: center;
 	font-weight: 700;
   list-style-type: none;
   padding: 0;margin: 0;
 }
 @media only screen and (max-width:700px) {
-  #homepage_nav ul, #sidebar_nav ul {
+#sidebar_nav ul {
   	padding-top: 16vh;
     font-size: 1.2em;
   }
 }
 @media only screen and (min-width:700px) {
-  #homepage_nav ul, #sidebar_nav ul {
+#sidebar_nav ul {
   	padding-top: 20vh;
     font-size: 1.7em;
   }
@@ -254,14 +215,14 @@ main {
 	padding: 5px 0;
 }
 
-#homepage_nav ul li ,#sidebar_nav ul li {
+#sidebar_nav ul li {
 	padding: 0;
 }
 #sidebar_nav ul li:hover {
 	background-color: rgba(255,241,228,.4);
 	cursor: pointer;
 }
-#homepage_nav a, #sidebar_nav a {
+#sidebar_nav a {
 	color: rgba(238,156,176,1)
 }
 #sidebar_nav a:hover, #homepage_nav a:hover {
@@ -318,12 +279,9 @@ main.index_homepage {
 	border: 1px solid #c5c5c5;
 	background: #ee9cb0; /*darker brown for hover*/
 }
-
-
 /*------------------------------------*\
     SNAKE GAME
 \*------------------------------------*/
-
 	#canvas {
 		background-color: red;
 	  display: block;
@@ -333,9 +291,6 @@ main.index_homepage {
 	  left:0;
 
 	}
-
-
-
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
@@ -367,11 +322,11 @@ main.index_homepage {
 
 @media only screen and (min-width:280px) {
 	/* main {background-color: blue;} */
-	.logo {font-size: 1.8em;}
+	.logo {font-size: 1.5em;}
 }
 @media only screen and (min-width:320px) {
 	/* main {background-color: blue;} */
-	.logo {font-size: 2em;}
+	.logo {font-size: 1.5em;}
 }
 @media only screen and (min-width:479px) {
 	/* main {background-color: blue;} */

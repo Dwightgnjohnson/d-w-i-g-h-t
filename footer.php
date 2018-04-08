@@ -9,6 +9,7 @@
 							<a href="//wordpress.org" title="WordPress">wordpress</a>
 						</small>
 		</footer>
+		<?php get_menu(); ?>
 
 	</body>
 </html>
