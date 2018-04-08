@@ -9,7 +9,17 @@
 							<a href="//wordpress.org" title="WordPress">wordpress</a>
 						</small>
 		</footer>
-		<?php get_menu(); ?>
+
+		<!-- menu -->
+		<aside>
+			<img id="main_menu" alt="face menu" src="<?php echo get_template_directory_uri() . '/img/face.png'; ?>" />
+
+			<div id="sidebar_nav" class="hide">
+				<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+			</div>
+		</aside>
+		<!-- /menu -->
+
 
 	</body>
 </html>

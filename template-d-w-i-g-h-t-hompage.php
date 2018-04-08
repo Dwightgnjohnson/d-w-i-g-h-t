@@ -67,5 +67,4 @@
 		<br class="clear">
 		<br class="clear">
 	</main>
-	<!-- <img id="home_neopolitan_svg" alt="icecream cone" class="home_neopolitan_svg" src="<?php echo get_template_directory_uri() . '/img/face.svg'; ?>" /> -->
 <?php get_footer(); ?>

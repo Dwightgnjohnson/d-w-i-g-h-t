@@ -454,17 +454,4 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
-
-?>
-
-<?php
-    require_once(dirname(__FILE__) . '/mainmenu.php');
-    $wp->init();
-    $wp->parse_request();
-    $wp->query_posts();
-    $wp->register_globals();
-    $wp->send_headers();
-
-    // Your Wordpress Functions here...
-    
 ?>

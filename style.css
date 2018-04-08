@@ -154,7 +154,7 @@ main {
 /*------------------------------------*\
     menu
 \*------------------------------------*/
-#mainmenu {
+#main_menu {
 	width: 50px;
 	animation: shake 20s;
   animation-iteration-count: infinite;
@@ -163,7 +163,7 @@ main {
   left: 2vh;
 	z-index: 4;
 }
-#mainmenu:hover {
+#main_menu:hover {
   cursor: pointer;
 }
 
